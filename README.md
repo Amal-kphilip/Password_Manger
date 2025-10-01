@@ -1,4 +1,5 @@
 🔐 Password Manager
+
 A simple, secure password manager that works on Windows, Mac, and Linux.
 
 🚀 Quick Setup (All Operating Systems)
