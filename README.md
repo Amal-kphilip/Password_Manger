@@ -1,45 +1,82 @@
-🔐 Password Manager
-A simple, secure password manager that works on Windows, Mac, and Linux.
+# 🔐 Password Manager
 
-🚀 Quick Setup (All Operating Systems)
-Step 1: Download and Install Python
-Windows: Download from python.org
+A simple, secure password manager built with Python that works on Windows, Mac, and Linux.
 
-Mac: brew install python or download from python.org
+-----
 
-Linux: sudo apt install python3 python3-pip (Ubuntu/Debian)
+## 🚀 Quick Setup
 
-Step 2: Download the Code
+### Step 1: Install Python
 
-# Download the project files to your computer
-# Place all files in a folder called "Password_Manger"
+Ensure you have Python 3 and Pip installed on your system.
 
-Step 3: Open Terminal/Command Prompt
-Windows:
+  * **Windows**: Download from [python.org](https://www.python.org/downloads/).
+  * **Mac**: `brew install python` or download from [python.org](https://www.python.org/downloads/).
+  * **Linux (Debian/Ubuntu)**: `sudo apt update && sudo apt install python3 python3-pip python3-venv`
 
-Press Windows + R, type cmd, press Enter
+### Step 2: Download the Code
 
-Mac:
+Download the project files and place them in a folder named `Password_Manager`.
 
-Press Cmd + Space, type Terminal, press Enter
+### Step 3: Navigate to the Project Folder
 
-Linux:
+Open your terminal or command prompt and navigate into the project directory.
 
-Press Ctrl + Alt + T
+```bash
+cd path/to/Password_Manager
+```
 
-Step 4: Install and Run
+### Step 4: Create and Activate a Virtual Environment
 
-# Navigate to the project folder
-cd path/to/Password_Manger
+Creating a virtual environment keeps your project's dependencies separate from your global Python installation.
 
-# Install required packages
-pip install flask cryptography
+1.  **Create the environment:**
 
-# Setup the database
-python setup_database.py
+    ```bash
+    python3 -m venv venv
+    ```
 
-# Run the application
-python run.py
+2.  **Activate the environment:**
 
-Step 5: Open Your Browser
-Go to: http://localhost:5000
+      * **Windows (Command Prompt):**
+        ```cmd
+        .\venv\Scripts\activate
+        ```
+      * **Windows (PowerShell):**
+        ```powershell
+        .\venv\Scripts\Activate.ps1
+        ```
+      * **Mac & Linux:**
+        ```bash
+        source venv/bin/activate
+        ```
+
+    > ✨ **Pro-tip**: You'll know the virtual environment is active when you see `(venv)` at the beginning of your terminal prompt.
+
+### Step 5: Install Dependencies and Run
+
+With your virtual environment active, install the required packages and launch the application.
+
+1.  **Install packages:**
+
+    ```bash
+    pip install flask cryptography
+    ```
+
+2.  **Set up the database:**
+
+    ```bash
+    python setup_database.py
+    ```
+
+3.  **Run the application:**
+
+    ```bash
+    python run.py
+    ```
+
+### Step 6: Open in Your Browser
+
+Once the server is running, open your web browser and go to the following address:
+
+[http://127.0.0.1:5000](https://www.google.com/search?q=http://127.0.0.1:5000)
