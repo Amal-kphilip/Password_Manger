@@ -1,69 +1,45 @@
-# 🔐 P-Vault: Your Personal Password Manager
+🔐 Password Manager
+A simple, secure password manager that works on Windows, Mac, and Linux.
 
-Welcome to P-Vault, a simple and secure password manager built with Python. It works seamlessly across **Windows**, **macOS**, and **Linux**, keeping your digital life safe and organized.
+🚀 Quick Setup (All Operating Systems)
+Step 1: Download and Install Python
+Windows: Download from python.org
 
------
+Mac: brew install python or download from python.org
 
-## ✨ Features
+Linux: sudo apt install python3 python3-pip (Ubuntu/Debian)
 
-  * **Cross-Platform:** Works on Windows, macOS, and Linux.
-  * **Secure:** Uses strong encryption to protect your passwords.
-  * **Local Storage:** Your data stays on your machine, giving you full control.
-  * **Web Interface:** Easy-to-use interface accessible from your browser.
-  * **Lightweight:** Minimal dependencies and easy setup.
+Step 2: Download the Code
 
------
+# Download the project files to your computer
+# Place all files in a folder called "Password_Manger"
 
-## 🚀 Getting Started
+Step 3: Open Terminal/Command Prompt
+Windows:
 
-Follow these simple steps to get P-Vault up and running in minutes.
+Press Windows + R, type cmd, press Enter
 
-### 1\. Prerequisites
+Mac:
 
-First, make sure you have **Python 3** installed on your system.
+Press Cmd + Space, type Terminal, press Enter
 
-  * **Windows:** Download from [python.org](https://www.python.org/downloads/).
-  * **macOS:** Install with Homebrew (`brew install python`) or download from [python.org](https://www.python.org/downloads/).
-  * **Linux (Ubuntu/Debian):**
-    ```bash
-    sudo apt update
-    sudo apt install python3 python3-pip
-    ```
+Linux:
 
-### 2\. Installation
+Press Ctrl + Alt + T
 
-1.  **Download the Code**
-    Download the project files and place them in a folder named `P-Vault`.
+Step 4: Install and Run
 
-2.  **Open Your Terminal**
+# Navigate to the project folder
+cd path/to/Password_Manger
 
-      * **Windows:** Press `Win + R`, type `cmd`, and press Enter.
-      * **macOS:** Press `Cmd + Space`, type `Terminal`, and press Enter.
-      * **Linux:** Press `Ctrl + Alt + T`.
+# Install required packages
+pip install flask cryptography
 
-3.  **Navigate to the Project Folder**
-    Replace `path/to/P-Vault` with the actual path to your folder.
+# Setup the database
+python setup_database.py
 
-    ```bash
-    cd path/to/P-Vault
-    ```
+# Run the application
+python run.py
 
-4.  **Install Dependencies & Setup Database**
-    This single command installs the required Python packages and sets up the database for you.
-
-    ```bash
-    pip install flask cryptography && python setup_database.py
-    ```
-
-### 3\. Usage
-
-1.  **Run the Application**
-    Start the local server with this command:
-
-    ```bash
-    python run.py
-    ```
-
-2.  **Open Your Browser**
-    Navigate to the following address to start using your password manager:
-    [**http://localhost:5000**](https://www.google.com/search?q=http://localhost:5000)
+Step 5: Open Your Browser
+Go to: http://localhost:5000
